@@ -1,0 +1,23 @@
+body {
+  background: white
+}
+
+h1{
+    color:#2a2a2a;
+    text-align: center;
+}
+
+
+
+.color{
+   color:#2a2a2a;
+   background: #c8c8c8;
+   width:40%
+
+
+}
+p{
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}

@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse('Главная страница')
+    return render(request, 'index.html')
 
 def weapons(request):
-    return HttpResponse('Мета сезона')
+    return render(request, 'information.html')

@@ -20,7 +20,7 @@ from news_warzone import views as main
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('main/', main.index),
-    path('weapons/', main.weapons)
+    path('', main.index), # Главная страница
+    path('weapons/', main.weapons, name='weapons'),
+    # сборка оружий в Warzone
 ]
