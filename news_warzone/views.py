@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import News
 
 # Create your views here.
 
@@ -8,3 +9,12 @@ def index(request):
 
 def weapons(request):
     return render(request, 'information.html')
+
+
+def news(request):
+    news = News.objects.all()
+    data = {'news': news}
+    return render(request, 'danie.html', data)
+
+
+

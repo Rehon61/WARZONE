@@ -21,6 +21,7 @@ from news_warzone import views as main
 
 urlpatterns = [
     path('', main.index), # Главная страница
-    path('weapons/', main.weapons, name='weapons'),
-    # сборка оружий в Warzone
+    path('weapons/', main.weapons, name='weapons'),# сборка оружий в Warzone
+    path('news/', main.news, name='news'), # новости типо
+
 ]
