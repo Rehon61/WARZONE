@@ -9,9 +9,9 @@
 <body>
 <h1>News</h1>
         {% for new in news %}
-        <p>{{ new.title}}  <span>{{ new.date|date:"d.m.Y" }}</span><br><span>{{ new.time }}</span></p>
+        <p>{{ new.title}} <br><span>{{ new.time }}</span></p>
         {% endfor %}
-
+        <p> {{new}}</p>
 
 </body>
 </html>
