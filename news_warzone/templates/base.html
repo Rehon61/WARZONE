@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Warzone Database</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+
+<h1>Тестовый сайт</h1>
+<h3><span><a href="{% url 'news' %}">News</a></span>
+<h3><span><a href="{% url 'post' %}">POST</a></span>
+    <span class="color"><a class="color" href="{% url 'weapons' %}"> Там есть что то полезное</a></span>
+
+
+{% block header %}
+{% endblock header %}
+
+
+
+</body>
+</html>

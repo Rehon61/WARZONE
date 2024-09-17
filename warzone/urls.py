@@ -23,5 +23,6 @@ urlpatterns = [
     path('', main.index), # Главная страница
     path('weapons/', main.weapons, name='weapons'),# сборка оружий в Warzone
     path('news/', main.news, name='news'), # новости типо
+    path('post/', main.post, name='post'), # новости типо
 
 ]

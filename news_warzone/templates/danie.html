@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <title>Warzone Database</title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-</head>
-<body>
-<h1>News</h1>
+{% extends "./base.html" %}
+{% block header %}
+    <h1>News</h1>
         {% for new in news %}
         <p>{{ new.title}} <br><span>{{ new.time }}</span></p>
         {% endfor %}
         <p> {{new}}</p>
+{% endblock header %}
 
-</body>
-</html>

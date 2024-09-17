@@ -12,12 +12,19 @@ h1{
 .color{
    color:#2a2a2a;
    background: #c8c8c8;
-   width:40%
+   width:40%;
+   margin-left: 20px;
 
 
 }
 p{
 white-space: nowrap;
+color: green;
 overflow: hidden;
 text-overflow: ellipsis;
+}
+
+h6{
+    color:#2a2a2a;
+    text-align: center;
 }

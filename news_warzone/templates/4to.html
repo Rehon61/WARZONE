@@ -1,0 +1,8 @@
+{% extends "./base.html" %}
+{% block header %}
+    <h1>Post</h1>
+        {% for post in posts %}
+        <p>{{ post.title}} <br><span>{{ post.time }}</span></p>
+        {% endfor %}
+        <p> {{post}}</p>
+{% endblock header %}

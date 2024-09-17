@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <title>Warzone Database</title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-</head>
-<body>
-
-    <h1>А вот и полезная информация</h1>
+{% extends "./base.html" %}
+{% block header %}
+  <h1>А вот и полезная информация</h1>
     <p>Это не клик бейт, но там пока что ничего нету(((</p>
     <p>Все функциональные блоки в ДЗ пустышки, так же мы делали в классе.
         Пока что не делали функционал
@@ -18,6 +10,6 @@
         <textarea name="comment" id="comment"></textarea>
         <input type="submit" value="Отправить">
     </form>
+{% endblock header %}
 
-</body>
-</html>
+
